@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded',function(){
        let messages =[];
 
        
-       if (username.lenght < 3){
+       if (username.length < 3){
         isValid=false;
 
         messages.push('Error!');
@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded',function(){
            messages.push("the email doesn't contain the @ or .");
        }
 
-       if (password.lenght < 8){
+       if (password.length < 8){
 
         isValid=false;
         messages.push('the password should have at least 8 caracters');
