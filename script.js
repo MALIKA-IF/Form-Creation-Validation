@@ -17,21 +17,17 @@ document.addEventListener('DOMContentLoaded',function(){
 
        let messages =[];
 
-       //validation username
        
        if (username.lenght < 3){
         isValid=false;
 
         messages.push('Error!');
        }
-       //validation email
 
        if (!email.includes('@') || !email.includes('.')){
            isValid=false;
            messages.push("the email doesn't contain the @ or .");
        }
-
-       //validation password
 
        if (password.lenght < 8){
 
