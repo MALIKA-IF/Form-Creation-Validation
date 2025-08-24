@@ -13,21 +13,21 @@ document.addEventListener('DOMContentLoaded',function(){
        const email =document.getElementById('email').value.trim();
        const password = document.getElementById('password').value.trim();
 
-       let isvalid=true;
+       let isValid=true;
 
        let messages =[];
 
        //validation username
        
        if (username.lenght() != 3){
-        isvalid=false;
+        isValid=false;
 
         messages.push('Error!');
        }
        //validation email
 
        if (!email.includes('@') || !email.includes('.')){
-           isvalid=false;
+           isValid=false;
            messages.push("the email doesn't contain the @ or .");
        }
 
@@ -35,11 +35,8 @@ document.addEventListener('DOMContentLoaded',function(){
 
        if (password.lenght() != 8)
 
-        isvalid=false;
+        isValid=false;
         messages.push('the password should have at least 8 caracters');
-
-        
-
     })
 
     
