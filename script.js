@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded',function(){
 
        //validation username
        
-       if (username.lenght() != 3){
+       if (username.lenght != 3){
         isValid=false;
 
         messages.push('Error!');
@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded',function(){
 
        //validation password
 
-       if (password.lenght() != 8)
+       if (password.lenght != 8)
 
         isValid=false;
         messages.push('the password should have at least 8 caracters');
