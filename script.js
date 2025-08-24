@@ -37,6 +37,17 @@ document.addEventListener('DOMContentLoaded',function(){
 
         isValid=false;
         messages.push('the password should have at least 8 caracters');
+
+        feedbackDiv.style.display ='block';
+
+        if (isValid){
+            feedbackDiv.textContent('Registration successful!');
+            feedbackDiv.style.color ='#28a745';
+        }
+        if(!isValid){
+            feedbackDiv.innerHTML=messages.join('<br>');
+            feedbackDiv.style.color ='#dc3545'
+        }
     })
 
     
