@@ -1,6 +1,12 @@
-document.addEventListener("DOMContentLoaded", console.log("page loaded"));
+document.addEventListener('DOMContentLoaded',function(){
 
-const form =document.getElementById("#registration-form");
+    const form =document.getElementById('registration-form');
 
-const feedbackDiv=document.querySelector("#form-feedback");
+    const feedbackDiv=document.querySelector('form-feedback');
 
+    form.addEventListener('submit', function(event){
+
+        event.preventDefault();
+        
+    })
+})
